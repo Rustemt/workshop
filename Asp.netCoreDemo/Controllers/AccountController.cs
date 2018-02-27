@@ -63,9 +63,8 @@ namespace Asp.netCoreDemo.Controllers
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
                 var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
-                {
-                    _logger.LogInformation("User logged in. user name");
-                    _logger.LogInformation("User logged logged.");
+                {                   
+                    _logger.LogInformation("User logged logge1d.");
                     return RedirectToLocal(returnUrl);
                 }
                 if (result.RequiresTwoFactor)
