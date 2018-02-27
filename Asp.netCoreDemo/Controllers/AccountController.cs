@@ -65,6 +65,7 @@ namespace Asp.netCoreDemo.Controllers
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in. user name");
+                    _logger.LogInformation("User logged logged.");
                     return RedirectToLocal(returnUrl);
                 }
                 if (result.RequiresTwoFactor)
