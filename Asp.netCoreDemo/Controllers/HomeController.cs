@@ -17,7 +17,7 @@ namespace Asp.netCoreDemo.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] =  "Work shop demo application description page.";
 
             return View();
         }
