@@ -47,6 +47,7 @@ namespace Asp.netCoreDemo
                 app.UseBrowserLink();
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
+                app.UseAuthentication();
             }
             else
             {
